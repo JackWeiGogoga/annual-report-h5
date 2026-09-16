@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>年度账单 H5 · MVP 预览</title>
+<style>
+  :root { --bg: #0b0d0f; --fg: #eef1f4; --muted: rgba(200, 210, 224, 0.6); }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { min-height: 100vh; background: var(--bg); color: var(--fg); font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif; -webkit-font-smoothing: antialiased; }
+  header { padding: 40px 32px 16px; display: flex; align-items: baseline; gap: 16px; }
+  header h1 { font-size: 20px; font-weight: 500; }
+  header p { color: var(--muted); font-size: 13px; }
+  .grid { display: flex; gap: 48px; justify-content: center; flex-wrap: wrap; padding: 24px 32px 60px; }
+  .demo { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+  .phone {
+    width: 390px; height: 844px; border-radius: 44px; overflow: hidden;
+    border: 8px solid #1c2024; background: #000; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+    position: relative;
+  }
+  .phone iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .meta { text-align: center; }
+  .meta h2 { font-size: 15px; font-weight: 500; }
+  .meta p { font-size: 12px; color: var(--muted); margin-top: 4px; line-height: 1.6; }
+  .meta a { color: var(--fg); font-size: 12px; display: inline-block; margin-top: 10px; padding: 8px 14px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 999px; text-decoration: none; }
+  @media (max-width: 900px) {
+    .phone { width: 100%; max-width: 390px; height: 78vh; border-width: 4px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>年度账单 H5 · MVP</h1>
+  <p>两个方向的粒子 / 3D 原型 · 在手机框里直接可以点、拖、长按</p>
+</header>
+<div class="grid">
+  <div class="demo">
+    <div class="phone"><iframe src="./demo1-tree/index.html" title="demo1 生长"></iframe></div>
+    <div class="meta">
+      <h2>demo1 · 生长</h2>
+      <p>参考 demo1.mp4：光球降下 → 点云树从中轴线展开<br>轻触：溶解重聚 + 换色调 / 镜头 · 拖拽旋转</p>
+      <a href="./demo1-tree/index.html" target="_blank">全屏打开</a>
+    </div>
+  </div>
+  <div class="demo">
+    <div class="phone"><iframe src="./demo2-shatter/index.html" title="demo2 重塑"></iframe></div>
+    <div class="meta">
+      <h2>demo2 · 重塑</h2>
+      <p>参考 demo2.mp4：粒子在 2026 / 地球 / K 线 / 数字 / 硬币 / 圆环 之间变形<br>轻触：碎片 / 尘埃 / 切环 三种炸开 · 长按打散 · 拖拽旋转</p>
+      <a href="./demo2-shatter/index.html" target="_blank">全屏打开</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

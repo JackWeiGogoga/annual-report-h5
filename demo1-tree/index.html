@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#000000">
+<title>2026 年度账单 · 生长</title>
+<link rel="stylesheet" href="./style.css">
+<script type="importmap">
+{ "imports": { "three": "../vendor/three/three.module.js" } }
+</script>
+</head>
+<body>
+<canvas id="gl"></canvas>
+<div class="vignette"></div>
+
+<main class="ui">
+  <header class="top">
+    <span class="brand">NOVA</span>
+    <span class="year">2026 · 年度账单</span>
+  </header>
+
+  <section class="slides" id="slides"></section>
+
+  <footer class="bottom">
+    <div class="dots" id="dots"></div>
+    <div class="hint" id="hint">轻触屏幕 · 继续</div>
+  </footer>
+</main>
+
+<div class="toast" id="toast"></div>
+
+<script type="module" src="./main.js"></script>
+</body>
+</html>

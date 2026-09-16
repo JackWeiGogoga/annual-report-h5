@@ -1,0 +1,13 @@
+{
+  "name": "annual-report-h5",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Crypto exchange annual report H5 — Three.js particle MVPs (demo1: tree unfold, demo2: shatter & reassemble)",
+  "scripts": {
+    "dev": "python3 -m http.server 4173 --bind 127.0.0.1",
+    "sync-three": "cp node_modules/three/build/three.module.js node_modules/three/build/three.core.js vendor/three/"
+  },
+  "dependencies": {
+    "three": "^0.186.0"
+  }
+}
